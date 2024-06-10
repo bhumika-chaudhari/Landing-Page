@@ -1,0 +1,449 @@
+*{
+    margin:0;
+    padding: 0;
+   box-sizing: border-box;
+}
+body {
+    background: #000000;
+    color: #ffffff;
+}
+
+  
+.header{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    font-size: 25px;
+    color: rgb(168, 223, 223);
+    text-decoration: none;
+
+    border-style: outset;
+    border-radius: 40px;
+    border-color: whitesmoke;
+    border-width: 5px;
+
+}
+.logo:hover{
+    transform: scale(1.04);
+
+}
+.navbar a{
+    font-size: 39px;
+    color: rgb(180, 150, 1);
+    font-weight: 500;
+ font-family: "Caveat", cursive;
+    text-decoration:none;
+    margin-left: 35px;
+    
+}
+.navbar a:hover{
+    color: rgb(144, 90, 48);
+}
+.name
+{
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    color: rgb(250, 183, 12);
+    text-shadow:1px 1px 1px rgba(240, 239, 237, 0.639);
+}
+.name:hover{
+    transform: scale(1.04);
+    text-shadow:2px 2px 2px rgba(228, 213, 183, 0.639);
+}
+.logo img {
+    margin-right: 1px; /* Adjust this margin to move the name closer to the image */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+
+}
+.Home .container {
+    margin: 25px;
+    background-image:radial-gradient( #f1deb5,#fce198,#f9d571,#b08307,#7e5d04);
+    padding: 10px;
+    height: 70vh;
+    display: flex;
+    z-index: 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 75px;
+   
+
+}
+.Home .container:hover{
+    box-shadow:1px 1px 35px #ffffff;
+    border: #6b4e0f solid;
+}
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+  height: 500px;
+  width: auto;
+}
+.image-container img:hover {
+   transform: scale3d(1.08,1.08,1.08);
+  }
+
+.text-container {
+    color: #000000;
+    flex: 1;
+    padding: 20px;
+}
+
+.text-container h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+   font-weight: 900;
+    color: rgb(69, 43, 2);
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.639);
+}
+.text-container h2:hover
+{
+    transform: scale(1.03);
+}
+.text-container p {
+font-size: 30px;    
+font-weight: 900;
+font-family: "Dancing Script", cursive;
+}
+#About .container {
+    background-image:linear-gradient(to bottom,#4d1f03,#290f01) ;
+    border: 10px groove;
+    border-color: #000000;
+    height: 80vh;
+    margin: 10vh;
+    padding: 10px;
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#About .container:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 3px 35px #ffffff;
+}
+#About h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+   font-weight: 900;
+    color: rgb(255, 159, 4);
+    margin-top: 50px;
+    text-align: center;
+
+}
+#About h2:hover{
+
+    text-shadow: 1px 1px 9px #ffe2b3;
+}
+.top-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.top-section img:hover {
+   transform: scale(1.05)
+}
+.bottom-section {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+    height: 40%;
+}
+.bottom-section div:hover{
+
+transform: scale(1.10)
+}
+.bottom-section div {
+    flex: 1;
+    margin: 0 10px;
+}
+.bottom-section h3{
+    font-family: 'Indie Flower',cursive,sans-serif;
+    color: hwb(43 47% 0%);
+    font-size: 29px;
+}
+.bottom-section p{
+    font-family: 'ceretal',cursive,sans-serif;
+    color: hwb(44 27% 39%);
+    font-size: 16px;
+}
+
+
+
+
+#product h3{
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+   font-weight: 900;
+    color: rgb(244, 217, 173);
+    margin-top: -2px;
+    text-align: center;
+text-shadow: 1px 2px 15px #f8aa01;
+}
+#product {
+    background-image: url("My first design.png");
+    background-size:cover;/* Ensures the image covers the entire width */
+    background-color: rgb(0, 0, 0);
+    background-position: top center; /* Aligns the image at the top center */
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-top: #ffffff;
+    height: 100vh; /* Ensures the section takes the full viewport height */
+    width: 100vw; /* Ensures the section takes the full viewport width */
+    box-sizing: border-box; /* Includes padding in the height and width calculation */
+}
+#product .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    height: 40vh;
+    justify-content: space-around;
+}
+.product-item {
+    background:transparent; /* Semi-transparent background for better readability */
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+   
+    text-align: center;
+    width: calc(20% - 40px); /* 5 items in a row */
+}
+.product-item img {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 10px;
+}
+.product-item img:hover {
+ transform: scale(1.4);
+ 
+}
+.product-item h4{
+    font-size: 28px;
+    font-family: 'indie flower',cursive;
+    color: #ffc982;
+    background-image:radial-gradient(#60311c,#361503e0) ;
+}
+.product-item p {
+    margin-top: 5px;
+    font-size: 19px;
+    
+    font-family:cursive;
+    color: #ffffff;
+    text-align: left;
+}
+
+.product-item p:hover{
+   background-color: #000000;
+}
+.large-4
+
+{
+    height: 230px;
+}
+
+
+
+
+/*Conatact us*/
+#Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #000000;
+    margin-top: 50px; 
+    height: 100vh;
+}
+
+#Contact .container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgb(0, 0, 0);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Contact .image-section {
+    flex: 1;
+    margin-right: 100px;
+}
+
+#Contact .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Contact .image-section img:hover{
+    transform: scale(1.25);
+}
+
+#Contact .form-section {
+    flex: 1;
+    padding: 20px;
+}
+#Contact .form-section:hover{
+    box-shadow: 1px 1px 58px #b08307;
+}
+
+#Contact .form-section h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #ffc982;
+    font-family: "Dancing Script", cursive;
+    font-size: 69px;
+}
+#Contact .form-section h1:hover{
+    text-shadow: 1px 1px 10px #b08307;
+}
+#Contact .form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+#Contact .form-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffcda4;
+    font-family: "Dancing Script", cursive;
+font-size: 25px;
+}
+
+#Contact .form-section input,
+#Contact .form-section textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#Contact .form-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7c50e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#Contact .form-section button:hover {
+    background-color: #462702;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10px 5%; /* Reduce padding for smaller screens */
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align navbar items */
+        gap: 10px; /* Add space between navbar items */
+    }
+
+    .navbar a {
+        margin: 0; /* Reset margin for navbar links */
+        font-size: 24px; /* Adjust font size for navbar links */
+    }
+
+    .logo-container {
+        justify-content: center; /* Center the logo on smaller screens */
+    }
+
+    .name {
+        display: none; /* Hide the name on smaller screens */
+    }
+
+    .Home .container {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        height: auto; /* Remove fixed height */
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .image-container img {
+        height: auto;
+        width: 100%; /* Make the image responsive */
+    }
+
+    .text-container h2 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center align the heading */
+    }
+
+    #About .container {
+        height: auto; /* Remove fixed height */
+        margin: 5vh 5vw; /* Adjust margin for smaller screens */
+    }
+
+    #About h2 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center align the heading */
+    }
+
+    .bottom-section {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        height: auto; /* Remove fixed height */
+        align-items: center; /* Center align items */
+    }
+
+    .bottom-section div {
+        margin: 20px 0; /* Adjust margin for smaller screens */
+        text-align: center; /* Center align text */
+    }
+
+    .product-item {
+        width: calc(50% - 30px); /* Adjust width for smaller screens */
+    }
+
+    .large-4 {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    .product-item p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
