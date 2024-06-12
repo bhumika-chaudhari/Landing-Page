@@ -353,45 +353,55 @@ font-size: 25px;
 }
 
 
+@media screen and (max-width: 768px) {
+    #Contact {
+        padding: 20px 0;
+        margin-top: 1000px;
+        position: absolute;
+        height: auto; /* Adjust height for smaller screens */
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
     #Contact .container {
-        flex-direction: column;
+        flex-direction: column; /* Stack sections vertically */
+        width: 90%; /* Adjust width for smaller screens */
     }
 
     #Contact .image-section {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+
+    #Contact .image-section img {
+        height: auto; /* Make the image responsive */
+        width: 100%; /* Ensure image takes full width */
     }
 
     #Contact .form-section h1 {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 480px) {
-    #Contact .form-section h1 {
-        font-size: 30px;
+        font-size: 36px; /* Adjust font size for smaller screens */
     }
 
     #Contact .form-section label {
-        font-size: 20px;
+        font-size: 18px; /* Adjust font size for smaller screens */
     }
+
+    /* Hide Product section on smaller screens */
+   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive */
